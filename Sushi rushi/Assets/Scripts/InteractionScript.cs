@@ -45,7 +45,7 @@ public class InteractionScript : MonoBehaviour
 
         else if (interactionAction.IsPressed())
         {
-            grabbedObject.GetComponent<Rigidbody2D>();
+            grabbedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             grabbedObject.transform.SetParent(null);
             grabbedObject = null;
         }
