@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
-
+    Animation anim;
 
     void Start()
     {
