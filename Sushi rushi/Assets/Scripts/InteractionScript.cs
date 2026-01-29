@@ -34,6 +34,7 @@ public class InteractionScript : MonoBehaviour
     private void CollisionDetector()
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.right, rayDistance);
+
         if (hitInfo.collider != null && hitInfo.collider.gameObject.layer == layerIndex)
         {
             if (interactionAction.WasPressedThisFrame() && isHolding == false)
@@ -48,7 +49,6 @@ public class InteractionScript : MonoBehaviour
             }
             else if (interactionAction.WasPressedThisFrame())
             {
-                Debug.Log("Jihad");
                 grabbedObject.transform.SetParent(null);
                 grabbedObject = null;
                 isHolding = false;
