@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7813791134359189654}
   m_Layer: 6
   m_Name: Redbox
-  m_TagString: Untagged
+  m_TagString: RedBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

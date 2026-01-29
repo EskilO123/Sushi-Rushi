@@ -11,6 +11,7 @@ public class InteractionScript : MonoBehaviour
     [SerializeField] private float rayDistance;
    
     [SerializeField] private GameObject redboxItem;
+    private GameObject heldItem;
 
     private int layerIndex;
     bool isHolding = false;
@@ -37,28 +38,23 @@ public class InteractionScript : MonoBehaviour
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.up, rayDistance);
 
-        if (hitInfo.collider != null && hitInfo.collider.gameObject.layer == layerIndex)
+        if (interactionAction.WasPressedThisFrame())
         {
-            if (interactionAction.WasPressedThisFrame() && isHolding == false)
+            if (!isHolding)
             {
-
-
-                GameObject newItem = Instantiate(redboxItem, grabPoint.position, Quaternion.identity);
-
-                newItem.transform.SetParent(grabPoint);
+                
+                heldItem = Instantiate(redboxItem, grabPoint.position, Quaternion.identity);
+                heldItem.transform.SetParent(grabPoint);
                 isHolding = true;
-
             }
-            else if (interactionAction.WasPressedThisFrame())
+            else
             {
-                redboxItem.transform.SetParent(null);
-                redboxItem = null;
-                isHolding = false;
+                // Drop the item
+                heldItem.transform.SetParent(null); 
+                heldItem = null; 
+                isHolding = false; 
             }
+            Debug.DrawRay(rayPoint.position, transform.up * rayDistance);
         }
-
-        Debug.DrawRay(rayPoint.position, transform.up * rayDistance);
-        
     }
-
 }

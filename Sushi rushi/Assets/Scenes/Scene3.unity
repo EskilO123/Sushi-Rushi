@@ -430,9 +430,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1462857543770757277, guid: 7a8f18542c08d5d4582dd2a0995f04c2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2382122590579586988, guid: 7a8f18542c08d5d4582dd2a0995f04c2, type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382122590579586988, guid: 7a8f18542c08d5d4582dd2a0995f04c2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5037796571505890153, guid: 7a8f18542c08d5d4582dd2a0995f04c2, type: 3}
       propertyPath: m_Size.y

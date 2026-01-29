@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Pickup
+  - RedBox
   layers:
   - Default
   - TransparentFX
