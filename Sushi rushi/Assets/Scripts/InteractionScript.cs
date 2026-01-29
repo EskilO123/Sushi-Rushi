@@ -10,7 +10,7 @@ public class InteractionScript : MonoBehaviour
     [SerializeField] private Transform rayPoint;
     [SerializeField] private float rayDistance;
    
-    public GameObject Boxitem;
+    [SerializeField] private GameObject redboxItem;
 
     private int layerIndex;
     bool isHolding = false;
@@ -28,12 +28,12 @@ public class InteractionScript : MonoBehaviour
     
     void Update()
     {
-        CollisionDetector();
+        GrabDetector();
     }
 
 
    
-    private void CollisionDetector()
+    private void GrabDetector()
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.up, rayDistance);
 
@@ -42,17 +42,17 @@ public class InteractionScript : MonoBehaviour
             if (interactionAction.WasPressedThisFrame() && isHolding == false)
             {
 
-                Boxitem = hitInfo.collider.gameObject;
-                Boxitem.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-                Instantiate(Boxitem, grabPoint.position,Quaternion.identity);
-                Boxitem.transform.SetParent(transform);
+
+                GameObject newItem = Instantiate(redboxItem, grabPoint.position, Quaternion.identity);
+
+                newItem.transform.SetParent(grabPoint);
                 isHolding = true;
 
             }
             else if (interactionAction.WasPressedThisFrame())
             {
-                Boxitem.transform.SetParent(null);
-                Boxitem = null;
+                redboxItem.transform.SetParent(null);
+                redboxItem = null;
                 isHolding = false;
             }
         }
