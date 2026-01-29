@@ -11,6 +11,7 @@ public class InteractionScript : MonoBehaviour
     private GameObject grabbedObject;
 
     private int layerIndex;
+    bool isHolding = false;
 
     InputAction interactionAction;
 
@@ -19,8 +20,6 @@ public class InteractionScript : MonoBehaviour
     {
         layerIndex = LayerMask.NameToLayer("Objects");
         interactionAction = InputSystem.actions.FindAction("Interact");
-
-
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -30,24 +29,30 @@ public class InteractionScript : MonoBehaviour
         CollisionDetector();
     }
 
-   private void CollisionDetector()
+
+   
+    private void CollisionDetector()
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.right, rayDistance);
-
-        if (interactionAction.IsPressed())
+        if (hitInfo.collider != null && hitInfo.collider.gameObject.layer == layerIndex)
         {
-            grabbedObject = hitInfo.collider.gameObject;
-            grabbedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-            grabbedObject.transform.position = grabPoint.position;
-            grabbedObject.transform.SetParent(transform);
+            if (interactionAction.WasPressedThisFrame() && isHolding == false)
+            {
 
-        }
+                grabbedObject = hitInfo.collider.gameObject;
+                grabbedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                grabbedObject.transform.position = grabPoint.position;
+                grabbedObject.transform.SetParent(transform);
+                isHolding = true;
 
-        else if (interactionAction.IsPressed())
-        {
-            grabbedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            grabbedObject.transform.SetParent(null);
-            grabbedObject = null;
+            }
+            else if (interactionAction.WasPressedThisFrame())
+            {
+                Debug.Log("Jihad");
+                grabbedObject.transform.SetParent(null);
+                grabbedObject = null;
+                isHolding = false;
+            }
         }
 
         Debug.DrawRay(rayPoint.position, transform.right * rayDistance);
