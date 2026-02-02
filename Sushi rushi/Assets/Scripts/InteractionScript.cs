@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class InteractionScript : MonoBehaviour
     [SerializeField] Transform grabPoint;
     [SerializeField] Transform rayPoint;
     [SerializeField] float rayDistance;
+    [SerializeField] ContainerSO containerContents;
    
     [SerializeField] GameObject redboxItem;
     GameObject heldItem;
@@ -18,17 +20,14 @@ public class InteractionScript : MonoBehaviour
     int containerLayer;
     bool isHolding = false;
 
-    [SerializeField] LayerMask boxLayer;
     InputAction interactionAction;
 
-    Rigidbody2D rb;
     void Start()
     {
         containerLayer = LayerMask.NameToLayer("Box");
         objectLayer = LayerMask.NameToLayer("Objects");
        
         interactionAction = InputSystem.actions.FindAction("Interact");
-        rb = GetComponent<Rigidbody2D>();
     }
 
     
@@ -37,9 +36,15 @@ public class InteractionScript : MonoBehaviour
         GrabDetector();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("FishContainer"))
+        {
+            
+        }
+    }
 
-   
-    private void GrabDetector()
+    void GrabDetector()
     {
         RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, transform.up, rayDistance);
 
@@ -50,11 +55,11 @@ public class InteractionScript : MonoBehaviour
                 if (!isHolding)
                 {
 
-                    heldItem = Instantiate(redboxItem, grabPoint.position, Quaternion.identity);
+                    heldItem = Instantiate(containerContents.GetContainedObject(), grabPoint.position, Quaternion.identity);
                     heldItem.transform.SetParent(grabPoint);
                     isHolding = true;
                 }
-                if (isHolding)
+                else if (isHolding)
                 {
                     // Drop the item
                     heldItem.transform.SetParent(null);
@@ -66,8 +71,6 @@ public class InteractionScript : MonoBehaviour
         }
         else if (hitInfo.collider != null && hitInfo.collider.gameObject.layer == objectLayer)
         {
-            if (!isHolding)
-            {
                 if (interactionAction.WasPressedThisFrame())
                 {
                     if (!isHolding)
@@ -78,7 +81,7 @@ public class InteractionScript : MonoBehaviour
                         heldItem.transform.SetParent(transform);
                         isHolding = true;
                     }
-                    if (isHolding)
+                    else if (isHolding)
                     {
                         // Drop the item
                         heldItem.transform.SetParent(null);
@@ -87,7 +90,6 @@ public class InteractionScript : MonoBehaviour
                     }
                     Debug.DrawRay(rayPoint.position, transform.up * rayDistance);
                 }
-            }
         }
     }   
 }

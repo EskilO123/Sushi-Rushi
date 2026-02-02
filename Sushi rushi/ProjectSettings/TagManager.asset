@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pickup
   - RedBox
+  - FishContainer
   layers:
   - Default
   - TransparentFX
