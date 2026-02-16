@@ -466,6 +466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RiceBox
       objectReference: {fileID: 0}
+    - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
+      propertyPath: itemToGive
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6505854928170578038, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.616

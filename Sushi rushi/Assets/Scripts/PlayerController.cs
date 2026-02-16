@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 6f;
-    [Tooltip("Hur mjukt den startar/stannar.")]
+    [Tooltip("How soft it starts and stops.")]
     [SerializeField] private float movementSmoothing = 0.05f;
 
     [Header("Interaction Settings")]

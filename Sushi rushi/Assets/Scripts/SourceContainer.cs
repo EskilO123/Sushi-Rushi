@@ -6,7 +6,7 @@ public class SourceStation : Station
 
     public override void Interact(PlayerController player)
     {
-        print("aaa");
+        print("Collected");
         
         if (player.currentItem == ItemType.None)
         {

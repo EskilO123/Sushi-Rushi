@@ -2,16 +2,16 @@
 public enum ItemType
 {
     None,
-    Lax,
+    Salmon,
     Avocado,
-    Ris,
-    Tallrik,
+    Rice,
+    Plate,
   
-    LaxBitar,
-    AvocadoSkivor,
-    RisTallrik, 
+    SalmonCuts,
+    AvocadoSlices,
+    RicePlate, 
     
-    SushiLax,
+    SushiSalmon,
     SushiAvocado,
     
     Trash
