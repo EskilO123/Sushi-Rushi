@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SourceStation : Station
@@ -13,6 +14,34 @@ public class SourceStation : Station
             player.currentItem = itemToGive;
             
            
+        }
+        
+        if (player.currentItem == ItemType.Rice)
+        {
+            player.currentItem = itemToGive;
+
+
+        }
+
+        if (player.currentItem == ItemType.Salmon)
+        {
+            player.currentItem = itemToGive;
+
+
+        }
+
+        if (player.currentItem == ItemType.RicePlate)
+        {
+            player.currentItem = itemToGive;
+
+
+        }
+
+        if (player.currentItem == ItemType.Plate)
+        {
+            player.currentItem = itemToGive;
+
+
         }
     }
 }
