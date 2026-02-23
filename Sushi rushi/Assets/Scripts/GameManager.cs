@@ -14,10 +14,6 @@ public class GameManager : MonoBehaviour
     public bool isSushiRushiActive = false;
     public bool isGameOver = false;
 
-    [Header("Audio")]
-    public AudioSource musicSource;
-    public AudioClip calmMusic; 
-    public AudioClip rushMusic; 
 
     void Awake() => Instance = this;
 
@@ -50,7 +46,6 @@ public class GameManager : MonoBehaviour
         isSushiRushiActive = true;
         Debug.Log("SUSHI RUSHI STARTED! RUN CAT RUN!");
         
-        musicSource.pitch = 1.2f;
 
         
         OrderManager.Instance.StartRushiMode();
