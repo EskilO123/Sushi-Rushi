@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SourceStation : Station
+public class SourceContianer : Station
 {
     public ItemType itemToGive;
 
@@ -17,6 +17,13 @@ public class SourceStation : Station
         }
         
         if (player.currentItem == ItemType.Rice)
+        {
+            player.currentItem = itemToGive;
+
+
+        }
+
+        if (player.currentItem == ItemType.Avocado)
         {
             player.currentItem = itemToGive;
 
