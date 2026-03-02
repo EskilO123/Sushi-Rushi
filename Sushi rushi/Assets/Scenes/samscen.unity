@@ -197,6 +197,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &223854816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4630533282066898654, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+  m_PrefabInstance: {fileID: 586422766969734617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &223854823
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223854816}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.01642406}
+  m_Radius: 0.41642404
 --- !u!1 &368583170
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,11 +997,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1512727608 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8128503789199616434, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
-  m_PrefabInstance: {fileID: 586422766969734617}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2135748068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,14 +1127,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5180399982113297587, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4630533282066898654, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 223854823}
   m_SourcePrefab: {fileID: 100100000, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
 --- !u!1001 &3152190489109904126
 PrefabInstance:
@@ -1178,17 +1214,9 @@ PrefabInstance:
       value: RiceBox
       objectReference: {fileID: 0}
     - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
-      propertyPath: grabPoint
-      value: 
-      objectReference: {fileID: 1512727608}
-    - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: itemToGive
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
-      propertyPath: riceSprite
-      value: 
-      objectReference: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
     - target: {fileID: 6505854928170578038, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.616
@@ -1367,14 +1395,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1537983435162688298, guid: 8b2ce33e733f575448921b851787dcdf, type: 3}
-      propertyPath: grabPoint
-      value: 
-      objectReference: {fileID: 1512727608}
-    - target: {fileID: 1537983435162688298, guid: 8b2ce33e733f575448921b851787dcdf, type: 3}
-      propertyPath: avocadoSprite
-      value: 
-      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
     - target: {fileID: 1603095538849242383, guid: 8b2ce33e733f575448921b851787dcdf, type: 3}
       propertyPath: m_Name
       value: AvocadoBox
