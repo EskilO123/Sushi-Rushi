@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using NUnit.Framework.Internal.Filters;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,7 +11,6 @@ public class SourceStation : Station
     [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite salmonSprite;
-    
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class SourceStation : Station
         if (player.currentItem == ItemType.None)
         {
             player.currentItem = itemToGive;
-            
+            spriteRenderer.sprite = null;
            
         }
         

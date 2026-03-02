@@ -1615,6 +1615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashStation
       objectReference: {fileID: 0}
+    - target: {fileID: 5111263683254606205, guid: f273eb405288d794e83a23f722855d06, type: 3}
+      propertyPath: grabPoint
+      value: 
+      objectReference: {fileID: 834798835}
     m_RemovedComponents:
     - {fileID: 173536619448065472, guid: f273eb405288d794e83a23f722855d06, type: 3}
     m_RemovedGameObjects: []
