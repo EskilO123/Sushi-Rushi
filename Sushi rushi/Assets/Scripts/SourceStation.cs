@@ -45,7 +45,8 @@ public class SourceStation : Station
         if (player.currentItem == ItemType.Salmon)
         {
             player.currentItem = itemToGive;
-
+            spriteRenderer.sprite = salmonSprite;
+            Debug.Log("Changed sprite to salmonSprite");
 
         }
 
