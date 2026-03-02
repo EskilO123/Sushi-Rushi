@@ -1188,7 +1188,7 @@ PrefabInstance:
     - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: riceSprite
       value: 
-      objectReference: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+      objectReference: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
     - target: {fileID: 6505854928170578038, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.616
