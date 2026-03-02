@@ -1,9 +1,20 @@
+using NUnit.Framework.Internal.Filters;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SourceContianer : Station
+public class SourceStation : Station
 {
     public ItemType itemToGive;
+    SpriteRenderer spriteRenderer;
+    [SerializeField] GameObject grabPoint;
+    [SerializeField] Sprite riceSprite;
+    [SerializeField] Sprite avocadoSprite;
+    [SerializeField] Sprite salmonSprite;
+
+    void Start()
+    {
+        spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+    }
 
     public override void Interact(PlayerController player)
     {
@@ -19,15 +30,15 @@ public class SourceContianer : Station
         if (player.currentItem == ItemType.Rice)
         {
             player.currentItem = itemToGive;
-
-
+            spriteRenderer.sprite = riceSprite;
+            Debug.Log("Changed sprite to ricesprite");
         }
 
         if (player.currentItem == ItemType.Avocado)
         {
             player.currentItem = itemToGive;
-
-
+            spriteRenderer.sprite = avocadoSprite;
+            Debug.Log("Changed sprite to avocadosprite");
         }
 
         if (player.currentItem == ItemType.Salmon)
