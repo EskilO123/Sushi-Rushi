@@ -4,6 +4,10 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+
+    Transform grabPointFollow;
+
+
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 6f;
     [Tooltip("How soft it starts and stops.")]
@@ -21,12 +25,15 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private Vector2 currentVelocity;
-    private Vector2 lastInteractionDir = Vector2.down; 
-
+    private Vector2 lastInteractionDir = Vector2.down;
+    [SerializeField] GameObject grabPoint;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        grabPointFollow = grabPoint.GetComponent<Transform>();
     }
+
+   
 
     void OnMove(InputValue value)
     {
@@ -51,6 +58,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         HandleMovement();
+        
     }
 
     private void HandleMovement()
@@ -86,6 +94,10 @@ public class PlayerController : MonoBehaviour
             Gizmos.color = Color.yellow;
             Vector3 targetPos = transform.position + (Vector3)(lastInteractionDir * interactRange);
             Gizmos.DrawWireSphere(targetPos, 0.3f);
+            grabPointFollow.position = targetPos;
+            
+
+
         }
     }
 }
