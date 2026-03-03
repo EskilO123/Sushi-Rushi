@@ -6,11 +6,16 @@ using UnityEngine;
 public class SourceStation : Station
 {
     public ItemType itemToGive;
+
     SpriteRenderer spriteRenderer;
+
     [SerializeField] GameObject grabPoint;
+
     [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite salmonSprite;
+
+    bool isholding;
 
     void Start()
     {
@@ -19,19 +24,30 @@ public class SourceStation : Station
 
     public override void Interact(PlayerController player)
     {
+
+
         print("Collected");
-        
+
+        if (player.currentItem != ItemType.None)
+        {
+            return;
+        }
+           
+
+
+
         if (player.currentItem == ItemType.None)
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = null;
-           
+            
         }
         
         if (player.currentItem == ItemType.Rice)
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = riceSprite;
+            
             Debug.Log("Changed sprite to ricesprite");
         }
 
@@ -39,6 +55,7 @@ public class SourceStation : Station
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = avocadoSprite;
+            
             Debug.Log("Changed sprite to avocadosprite");
         }
 
@@ -46,6 +63,7 @@ public class SourceStation : Station
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = salmonSprite;
+            
             Debug.Log("Changed sprite to salmonSprite");
 
         }

@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask interactLayer;
     [SerializeField] private float interactRange = 0.8f;
 
-    
+    [SerializeField] GameObject grabPoint;
+
     [Header("Status")]
     public ItemType currentItem = ItemType.None;
 
@@ -26,7 +27,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 currentVelocity;
     private Vector2 lastInteractionDir = Vector2.down;
-    [SerializeField] GameObject grabPoint;
+   
+    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
