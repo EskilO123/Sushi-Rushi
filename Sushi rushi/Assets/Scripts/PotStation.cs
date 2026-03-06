@@ -3,11 +3,28 @@ using System.Collections;
 
 public class PotStation : Station
 {
+
+
+    [SerializeField] Sprite cookedRiceSprite;
+
+    SpriteRenderer spriteRenderer;
+    SourceStation sourceStation;
+   
+    [SerializeField] public GameObject grabPoint;
+
+
     public bool isCooking = false;
     public bool isReady = false;
     public int portions = 0; 
 
     private float cookTime = 12f;
+
+   void Start()
+    {
+        sourceStation = GetComponent<SourceStation>();
+        spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+    }
+
 
     public override void Interact(PlayerController player)
     {
@@ -16,7 +33,8 @@ public class PotStation : Station
         {
             player.currentItem = ItemType.Rice;
             StartCoroutine(CookRice());
-            
+            spriteRenderer.sprite = null;
+
         }
         
         else if (player.currentItem == ItemType.Plate && isReady && portions > 0)
@@ -46,6 +64,6 @@ public class PotStation : Station
         isReady = true;
         portions = 2;
         Debug.Log("Rice done");
-
+        spriteRenderer.sprite = cookedRiceSprite;
     }
 }

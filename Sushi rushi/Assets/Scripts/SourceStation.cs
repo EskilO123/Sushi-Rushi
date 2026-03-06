@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class SourceStation : Station
 {
-    public ItemType itemToGive;
+   public ItemType itemToGive;
 
-    SpriteRenderer spriteRenderer;
+   public SpriteRenderer spriteRenderer;
 
-    [SerializeField] GameObject grabPoint;
+    [SerializeField] public GameObject grabPoint;
 
-    [SerializeField] Sprite riceSprite;
+    [SerializeField] public Sprite riceSprite;
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite salmonSprite;
 
-    bool isholding;
+    bool isHolding = false;
 
     void Start()
     {
@@ -25,13 +25,10 @@ public class SourceStation : Station
     public override void Interact(PlayerController player)
     {
 
-
+        
         print("Collected");
 
-        if (player.currentItem != ItemType.None)
-        {
-            return;
-        }
+        
            
 
 
