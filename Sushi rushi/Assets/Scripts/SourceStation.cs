@@ -7,7 +7,7 @@ public class SourceStation : Station
 {
    public ItemType itemToGive;
 
-   public SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderer;
 
     [SerializeField] public GameObject grabPoint;
 
@@ -29,7 +29,10 @@ public class SourceStation : Station
         print("Collected");
 
         
-           
+        if(player.currentItem == ItemType.Rice || player.currentItem == ItemType.Avocado || player.currentItem == ItemType.Salmon)
+        {
+            return;
+        }
 
 
 
