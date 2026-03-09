@@ -11,7 +11,7 @@ public class Order
     public float timeCreated;
     
 }
-
+[System.Serializable]
 public class OrderManager : MonoBehaviour
 {
     public static OrderManager Instance;
