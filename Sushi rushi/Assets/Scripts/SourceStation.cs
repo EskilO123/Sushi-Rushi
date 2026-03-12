@@ -5,21 +5,24 @@ using UnityEngine;
 
 public class SourceStation : Station
 {
+    PlayerController player;
    public ItemType itemToGive;
 
     SpriteRenderer spriteRenderer;
 
     [SerializeField] public GameObject grabPoint;
 
-    [SerializeField] public Sprite riceSprite;
+    [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite salmonSprite;
+    
 
-    bool isHolding = false;
+    
 
     void Start()
     {
         spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+        
     }
 
     public override void Interact(PlayerController player)
@@ -28,8 +31,9 @@ public class SourceStation : Station
         
         print("Collected");
 
-        
-        if(player.currentItem == ItemType.Rice || player.currentItem == ItemType.Avocado || player.currentItem == ItemType.Salmon)
+
+        if (player.currentItem != ItemType.None)
+   
         {
             return;
         }
@@ -40,6 +44,7 @@ public class SourceStation : Station
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = null;
+           
             
         }
         
@@ -47,7 +52,6 @@ public class SourceStation : Station
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = riceSprite;
-            
             Debug.Log("Changed sprite to ricesprite");
         }
 
@@ -56,6 +60,7 @@ public class SourceStation : Station
             player.currentItem = itemToGive;
             spriteRenderer.sprite = avocadoSprite;
             
+
             Debug.Log("Changed sprite to avocadosprite");
         }
 
@@ -64,6 +69,7 @@ public class SourceStation : Station
             player.currentItem = itemToGive;
             spriteRenderer.sprite = salmonSprite;
             
+
             Debug.Log("Changed sprite to salmonSprite");
 
         }
@@ -72,12 +78,14 @@ public class SourceStation : Station
         {
             player.currentItem = itemToGive;
 
+            
 
         }
 
         if (player.currentItem == ItemType.Plate)
         {
             player.currentItem = itemToGive;
+            
 
 
         }
