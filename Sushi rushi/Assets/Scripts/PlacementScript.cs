@@ -2,22 +2,25 @@ using UnityEngine;
 
 public class PlacementScript : Station
 {
-    SpriteRenderer spriteRenderer;
+    SpriteRenderer gpSpriteRenderer;
+    SpriteRenderer ppSpriteRenderer;
 
     [SerializeField] GameObject grabPoint;
+    [SerializeField] GameObject placementPoint;
 
-    [SerializeField] GameObject avocado;
-    [SerializeField] GameObject rice;
-    [SerializeField] GameObject salmon;
-
+    [SerializeField] Sprite avocadoSprite;
+    [SerializeField] Sprite riceSprite;
+    [SerializeField] Sprite salmonSprite;
 
     [SerializeField] Transform placementTarget;
 
+   [SerializeField] bool isPlaced = false;
+
     private void Start()
     {
-        spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+        gpSpriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+        ppSpriteRenderer = placementPoint.GetComponent<SpriteRenderer>();
     }
-
 
 
 
@@ -25,25 +28,76 @@ public class PlacementScript : Station
     {
         print("Interacted");
 
-        if(player.currentItem == ItemType.Rice )
+        if (player.currentItem == ItemType.Rice )
         {
-            Instantiate(rice, placementTarget.position, Quaternion.identity);
-            player.currentItem = ItemType.None;
-            spriteRenderer.sprite = null;
-            
+            if (!isPlaced)
+            {
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = riceSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
         }
-        else if(player.currentItem == ItemType.Salmon )
+        else if (player.currentItem == ItemType.Salmon )
         {
-            Instantiate(salmon, placementTarget.position, Quaternion.identity);
-            player.currentItem = ItemType.None;
-            spriteRenderer.sprite = null;
+            if (!isPlaced)
+            {
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = salmonSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
+        else if (player.currentItem == ItemType.Avocado)
+        {
+            if (!isPlaced)
+            {
+                Debug.Log("Placed down avocado");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = avocadoSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
+        else if (player.currentItem == ItemType.None)
+        {
+            if (isPlaced)
+            {
+                if (ppSpriteRenderer.sprite == avocadoSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.Avocado;
+                    gpSpriteRenderer.sprite = avocadoSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+                else if (ppSpriteRenderer.sprite == riceSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.Rice;
+                    gpSpriteRenderer.sprite = riceSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+                else if (ppSpriteRenderer.sprite == salmonSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.Salmon;
+                    gpSpriteRenderer.sprite = salmonSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+            }
+        }
 
-        }
-        else if(player.currentItem == ItemType.Avocado)
-        {
-            Instantiate(avocado, placementTarget.position, Quaternion.identity);
-            player.currentItem = ItemType.None;
-            spriteRenderer.sprite = null;
-        }
+        //  if (isPlaced)
+        // {
+        //    if (player.currentItem == ItemType.None)
+        // {
+        //       player.currentItem = ItemType.Rice;
+        //      gpSpriteRenderer.sprite = riceSprite;
+        //      ppSpriteRenderer.sprite = null;
+        // }
+        // }
     }
 }
