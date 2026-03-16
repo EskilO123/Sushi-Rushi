@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &441870029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441870030}
+  m_Layer: 0
+  m_Name: CuttingBoardPlacement
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441870030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441870029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.75, y: -0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &501028550
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +617,7 @@ GameObject:
   - component: {fileID: 1163852587}
   - component: {fileID: 1163852586}
   - component: {fileID: 1163852585}
-  - component: {fileID: 1163852588}
+  - component: {fileID: 1163852590}
   m_Layer: 6
   m_Name: Cutting Board
   m_TagString: Untagged
@@ -714,7 +745,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1163852588
+--- !u!114 &1163852590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -857,22 +888,82 @@ PrefabInstance:
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 4470420532616423454, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -917,18 +1008,66 @@ PrefabInstance:
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 7621996457151650950, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_Name
       value: Counters
@@ -937,10 +1076,34 @@ PrefabInstance:
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 834798835}
+    - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: riceSprite
+      value: 
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonSprite
+      value: 
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
+    - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSprite
+      value: 
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -977,7 +1140,7 @@ PrefabInstance:
     - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: riceSprite
       value: 
-      objectReference: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+      objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 5314629174232722607, guid: ea252616b3d91d145b142015921fe05a, type: 3}
       propertyPath: salmonSprite
       value: 
@@ -1096,7 +1259,7 @@ PrefabInstance:
     - target: {fileID: 5677967112221085936, guid: 828faf71207ab6849ba41ac99e39a0d0, type: 3}
       propertyPath: salmonSprite
       value: 
-      objectReference: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+      objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
     - target: {fileID: 8551276592368616047, guid: 828faf71207ab6849ba41ac99e39a0d0, type: 3}
       propertyPath: m_Name
       value: SalmonBox
@@ -1179,7 +1342,7 @@ PrefabInstance:
     - target: {fileID: 1537983435162688298, guid: 8b2ce33e733f575448921b851787dcdf, type: 3}
       propertyPath: avocadoSprite
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+      objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
     - target: {fileID: 1603095538849242383, guid: 8b2ce33e733f575448921b851787dcdf, type: 3}
       propertyPath: m_Name
       value: AvocadoBox
@@ -1507,3 +1670,4 @@ SceneRoots:
   - {fileID: 1163852587}
   - {fileID: 778058648}
   - {fileID: 3828070712397709684}
+  - {fileID: 441870030}

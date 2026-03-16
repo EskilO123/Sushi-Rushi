@@ -12,7 +12,7 @@ public class PlacementScript : Station
     [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite salmonSprite;
 
-    [SerializeField] Transform placementTarget;
+    
 
    [SerializeField] bool isPlaced = false;
 

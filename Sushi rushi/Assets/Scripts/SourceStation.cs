@@ -16,7 +16,7 @@ public class SourceStation : Station
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite salmonSprite;
     
-
+    
     
 
     void Start()
@@ -30,24 +30,25 @@ public class SourceStation : Station
 
         
         print("Collected");
-
+        
+       
 
         if (player.currentItem != ItemType.None)
    
         {
             return;
         }
-
-
-
+        
+        
         if (player.currentItem == ItemType.None)
         {
             player.currentItem = itemToGive;
             spriteRenderer.sprite = null;
-           
-            
+
+
         }
-        
+
+       
         if (player.currentItem == ItemType.Rice)
         {
             player.currentItem = itemToGive;

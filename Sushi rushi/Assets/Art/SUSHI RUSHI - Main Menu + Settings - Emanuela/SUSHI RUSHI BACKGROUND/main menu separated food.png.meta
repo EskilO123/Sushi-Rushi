@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 2ab430428a999ac4497e24e4a88e6946
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -618175620081480946
+    second: main menu separated food_0
+  - first:
+      213: 2454168392801699784
+    second: main menu separated food_1
+  - first:
+      213: -1860370717212667447
+    second: main menu separated food_2
+  - first:
+      213: -5829491777375828336
+    second: main menu separated food_3
+  - first:
+      213: 7974521959252225221
+    second: main menu separated food_4
+  - first:
+      213: 1934033223043935290
+    second: main menu separated food_5
+  - first:
+      213: -7949698572131827211
+    second: main menu separated food_6
+  - first:
+      213: 1751469353109280227
+    second: main menu separated food_7
+  - first:
+      213: 4174558389346812965
+    second: main menu separated food_8
+  - first:
+      213: 1047952327239662525
+    second: main menu separated food_9
+  - first:
+      213: 8104834641611279849
+    second: main menu separated food_10
+  - first:
+      213: -1147628792546320515
+    second: main menu separated food_11
+  - first:
+      213: -6132833932392648149
+    second: main menu separated food_12
+  - first:
+      213: -1898294217540857341
+    second: main menu separated food_13
+  - first:
+      213: 6344736706048872541
+    second: main menu separated food_14
+  - first:
+      213: 1197360420430575369
+    second: main menu separated food_15
+  - first:
+      213: 2201133744886741508
+    second: main menu separated food_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: main menu separated food_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1331
+        width: 139
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b8c3c7c8ccb67f0800000000000000
+      internalID: -618175620081480946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1464
+        width: 168
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7cfe78625fe0220800000000000000
+      internalID: 2454168392801699784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_2
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1396
+        width: 980
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1100a70b2ae26e0800000000000000
+      internalID: -1860370717212667447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_3
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 899
+        width: 484
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096047c4d1c791fa0800000000000000
+      internalID: -5829491777375828336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_4
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 1476
+        width: 133
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cce7ca98713bae60800000000000000
+      internalID: 7974521959252225221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_5
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 1453
+        width: 143
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c665b28f017da10800000000000000
+      internalID: 1934033223043935290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_6
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 1346
+        width: 146
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f107a8944ffca190800000000000000
+      internalID: -7949698572131827211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_7
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 764
+        width: 112
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5df03d8187e4810800000000000000
+      internalID: 1751469353109280227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_8
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 758
+        width: 172
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524c423ccb20fe930800000000000000
+      internalID: 4174558389346812965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_9
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 620
+        width: 366
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbf9aed6131b8e00800000000000000
+      internalID: 1047952327239662525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_10
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 563
+        width: 264
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed45805a282a7070800000000000000
+      internalID: 8104834641611279849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_11
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 643
+        width: 93
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f144e81bdc210f0800000000000000
+      internalID: -1147628792546320515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_12
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 539
+        width: 168
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b223649180cc3eaa0800000000000000
+      internalID: -6132833932392648149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_13
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 508
+        width: 149
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3029c4c7777e7a5e0800000000000000
+      internalID: -1898294217540857341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_14
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 124
+        width: 237
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50dc651b680d0850800000000000000
+      internalID: 6344736706048872541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_15
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 190
+        width: 287
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90770ef55f0ed9010800000000000000
+      internalID: 1197360420430575369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main menu separated food_16
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 36
+        width: 226
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a79179a7ffb8e10800000000000000
+      internalID: 2201133744886741508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      main menu separated food_0: -618175620081480946
+      main menu separated food_1: 2454168392801699784
+      main menu separated food_10: 8104834641611279849
+      main menu separated food_11: -1147628792546320515
+      main menu separated food_12: -6132833932392648149
+      main menu separated food_13: -1898294217540857341
+      main menu separated food_14: 6344736706048872541
+      main menu separated food_15: 1197360420430575369
+      main menu separated food_16: 2201133744886741508
+      main menu separated food_2: -1860370717212667447
+      main menu separated food_3: -5829491777375828336
+      main menu separated food_4: 7974521959252225221
+      main menu separated food_5: 1934033223043935290
+      main menu separated food_6: -7949698572131827211
+      main menu separated food_7: 1751469353109280227
+      main menu separated food_8: 4174558389346812965
+      main menu separated food_9: 1047952327239662525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

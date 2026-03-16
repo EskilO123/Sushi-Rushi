@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7256da9e52dde1d468bcf449bdb68b66
+guid: 2f0935c27d9c4fa438e3fc3b91cf1064
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8028362493962905751
-    second: Avocado_0
+      213: 8100785917016182186
+    second: Buttons_-_Main_Menu_0
+  - first:
+      213: -7432705245800369164
+    second: Buttons_-_Main_Menu_1
+  - first:
+      213: -671890004312634171
+    second: Buttons_-_Main_Menu_2
+  - first:
+      213: 5596525930212798056
+    second: Buttons_-_Main_Menu_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 450
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Avocado_0
+      name: Buttons_-_Main_Menu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 425
-        height: 398
+        x: 721
+        y: 682
+        width: 882
+        height: 267
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7986ab4f6297a6f60800000000000000
-      internalID: 8028362493962905751
+      spriteID: aad8c392fd5cb6070800000000000000
+      internalID: 8100785917016182186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_-_Main_Menu_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 382
+        width: 830
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3f2e785f9b9d890800000000000000
+      internalID: -7432705245800369164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_-_Main_Menu_2
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 88
+        width: 795
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc4fc4d997fca6f0800000000000000
+      internalID: -671890004312634171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_-_Main_Menu_3
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 49
+        width: 211
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ea89e8eaadaad40800000000000000
+      internalID: 5596525930212798056
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Avocado_0: 8028362493962905751
+      Buttons_-_Main_Menu_0: 8100785917016182186
+      Buttons_-_Main_Menu_1: -7432705245800369164
+      Buttons_-_Main_Menu_2: -671890004312634171
+      Buttons_-_Main_Menu_3: 5596525930212798056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
