@@ -884,6 +884,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 557573292666209063, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -900,6 +904,14 @@ PrefabInstance:
       propertyPath: avocadoSprite
       value: 
       objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
+    - target: {fileID: 1411862514919038064, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807833622698082652, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -964,6 +976,10 @@ PrefabInstance:
       propertyPath: avocadoSprite
       value: 
       objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
+    - target: {fileID: 4415833514689530838, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
     - target: {fileID: 4470420532616423454, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1004,6 +1020,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4677846201812354481, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -1020,6 +1040,18 @@ PrefabInstance:
       propertyPath: avocadoSprite
       value: 
       objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
+    - target: {fileID: 5158178952196712259, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6211023700583739685, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6211023700583739685, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -1052,6 +1084,10 @@ PrefabInstance:
       propertyPath: avocadoSprite
       value: 
       objectReference: {fileID: 8028362493962905751, guid: 7256da9e52dde1d468bcf449bdb68b66, type: 3}
+    - target: {fileID: 6803422593621113393, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
