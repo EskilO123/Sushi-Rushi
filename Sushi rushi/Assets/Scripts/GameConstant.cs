@@ -14,5 +14,7 @@ public enum ItemType
     SushiSalmon,
     SushiAvocado,
     
-    Trash
+    Trash,
+
+    CookedRice,
 }

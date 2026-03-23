@@ -8,8 +8,6 @@ public class PotStation : Station
     [SerializeField] Sprite cookedRiceSprite;
 
     SpriteRenderer spriteRenderer;
-    SourceStation sourceStation;
-   
     [SerializeField] public GameObject grabPoint;
 
 
@@ -21,7 +19,7 @@ public class PotStation : Station
 
    void Start()
     {
-        sourceStation = GetComponent<SourceStation>();
+        
         spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
     }
 
@@ -34,6 +32,7 @@ public class PotStation : Station
             player.currentItem = ItemType.Rice;
             StartCoroutine(CookRice());
             spriteRenderer.sprite = null;
+            player.currentItem = ItemType.None;
 
         }
         
@@ -51,6 +50,24 @@ public class PotStation : Station
             }
             
         }
+
+        if(isReady)
+        {
+            spriteRenderer.sprite = cookedRiceSprite;
+            isReady = false;
+            portions = 0;
+            player.currentItem = ItemType.CookedRice;
+            
+
+            
+        }
+        else if (!isReady && portions == 0 && !isCooking && player.currentItem == ItemType.Rice)
+        {
+
+            StartCoroutine(CookRice());
+
+
+        }
     }
 
     IEnumerator CookRice()
@@ -64,6 +81,6 @@ public class PotStation : Station
         isReady = true;
         portions = 2;
         Debug.Log("Rice done");
-        spriteRenderer.sprite = cookedRiceSprite;
+        
     }
 }

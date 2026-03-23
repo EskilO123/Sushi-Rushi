@@ -103,4 +103,12 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+    private void Flip()
+    {
+        if(rb.linearVelocityX > 0)
+        {
+            transform.localScale = new Vector3(-1, 0, 0);
+        }
+    }
 }

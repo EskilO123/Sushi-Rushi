@@ -17,7 +17,6 @@ public class SourceStation : Station
     [SerializeField] Sprite salmonSprite;
     
     
-    
 
     void Start()
     {
@@ -55,6 +54,9 @@ public class SourceStation : Station
             spriteRenderer.sprite = riceSprite;
             Debug.Log("Changed sprite to ricesprite");
         }
+
+       
+    
 
         if (player.currentItem == ItemType.Avocado)
         {

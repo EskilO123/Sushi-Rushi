@@ -11,10 +11,11 @@ public class PlacementScript : Station
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite salmonSprite;
+    [SerializeField] Sprite cookedRiceSprite;
 
-    
 
-   [SerializeField] bool isPlaced = false;
+
+    [SerializeField] bool isPlaced = false;
 
     private void Start()
     {
@@ -59,6 +60,17 @@ public class PlacementScript : Station
                 isPlaced = true;
             }
         }
+        else if(player.currentItem == ItemType.CookedRice)
+        {
+            if(!isPlaced)
+            {
+                Debug.Log("Placed down CookedRiceSprite");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = cookedRiceSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
         else if (player.currentItem == ItemType.None)
         {
             if (isPlaced)
@@ -76,6 +88,15 @@ public class PlacementScript : Station
                     Debug.Log("Picked up from counter");
                     player.currentItem = ItemType.Rice;
                     gpSpriteRenderer.sprite = riceSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+
+                else if(ppSpriteRenderer.sprite == cookedRiceSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.CookedRice;
+                    gpSpriteRenderer.sprite = cookedRiceSprite;
                     ppSpriteRenderer.sprite = null;
                     isPlaced = false;
                 }
