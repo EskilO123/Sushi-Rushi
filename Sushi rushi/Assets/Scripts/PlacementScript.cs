@@ -12,6 +12,9 @@ public class PlacementScript : Station
     [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite salmonSprite;
     [SerializeField] Sprite cookedRiceSprite;
+    [SerializeField] Sprite plateSprite;
+    [SerializeField] Sprite avocadoSlicesSprite;
+    [SerializeField] Sprite salmonCutsSprite;
 
 
 
@@ -60,6 +63,28 @@ public class PlacementScript : Station
                 isPlaced = true;
             }
         }
+        else if (player.currentItem == ItemType.AvocadoSlices)
+        {
+            if (!isPlaced)
+            {
+                Debug.Log("Placed down AvocadoSlices");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = avocadoSlicesSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
+        else if (player.currentItem == ItemType.SalmonCuts)
+        {
+            if (!isPlaced)
+            {
+                Debug.Log("Placed down SalmonCuts");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = salmonCutsSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
         else if(player.currentItem == ItemType.CookedRice)
         {
             if(!isPlaced)
@@ -71,6 +96,23 @@ public class PlacementScript : Station
                 isPlaced = true;
             }
         }
+        else if (player.currentItem == ItemType.Plate)
+        {
+            if (!isPlaced)
+            {
+                Debug.Log("Placed down Plate");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = plateSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
+        //Isnt placed
+
+
+
+
+        //Isplaced
         else if (player.currentItem == ItemType.None)
         {
             if (isPlaced)
@@ -80,6 +122,14 @@ public class PlacementScript : Station
                     Debug.Log("Picked up from counter");
                     player.currentItem = ItemType.Avocado;
                     gpSpriteRenderer.sprite = avocadoSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+                else if (ppSpriteRenderer.sprite == avocadoSlicesSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.AvocadoSlices;
+                    gpSpriteRenderer.sprite = avocadoSlicesSprite;
                     ppSpriteRenderer.sprite = null;
                     isPlaced = false;
                 }
@@ -108,17 +158,26 @@ public class PlacementScript : Station
                     ppSpriteRenderer.sprite = null;
                     isPlaced = false;
                 }
+                else if (ppSpriteRenderer.sprite == salmonCutsSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.SalmonCuts;
+                    gpSpriteRenderer.sprite = salmonCutsSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+
+                else if (ppSpriteRenderer.sprite == plateSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.Plate;
+                    gpSpriteRenderer.sprite = plateSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
             }
         }
 
-        //  if (isPlaced)
-        // {
-        //    if (player.currentItem == ItemType.None)
-        // {
-        //       player.currentItem = ItemType.Rice;
-        //      gpSpriteRenderer.sprite = riceSprite;
-        //      ppSpriteRenderer.sprite = null;
-        // }
-        // }
+        
     }
 }

@@ -15,7 +15,7 @@ public class SourceStation : Station
     [SerializeField] Sprite riceSprite;
     [SerializeField] Sprite avocadoSprite;
     [SerializeField] Sprite salmonSprite;
-    
+    [SerializeField] Sprite plateSprite;
     
 
     void Start()
@@ -88,8 +88,9 @@ public class SourceStation : Station
         if (player.currentItem == ItemType.Plate)
         {
             player.currentItem = itemToGive;
-            
 
+            spriteRenderer.sprite = plateSprite;
+            Debug.Log("Changed sprite to plateSprite");
 
         }
     }

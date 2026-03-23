@@ -727,6 +727,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CuttingStation
   itemOnBoard: 0
+  grabPoint: {fileID: 834798835}
+  avocadoSlicesSprite: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
+  salmonCutsSprite: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
 --- !u!1001 &586422766969734617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -866,6 +869,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -877,6 +884,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 948370870318254082, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 1411862514919038064, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.83
@@ -894,6 +909,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -905,6 +924,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 1989106475748658871, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -913,6 +940,10 @@ PrefabInstance:
       propertyPath: riceSprite
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
     - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
@@ -925,6 +956,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 2524235042934126593, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -933,6 +972,10 @@ PrefabInstance:
       propertyPath: riceSprite
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
     - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
@@ -945,6 +988,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 3643781757589393398, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -953,6 +1004,10 @@ PrefabInstance:
       propertyPath: riceSprite
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
+    - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
     - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
@@ -965,6 +1020,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 4358369135531087072, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 4415833514689530838, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.83
@@ -1022,6 +1085,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -1033,6 +1100,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 4978329798017607181, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 5158178952196712259, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.83
@@ -1054,6 +1129,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -1065,6 +1144,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 6352702920676505204, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -1074,6 +1161,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -1085,6 +1176,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 6684264459109311896, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 6803422593621113393, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -1098,6 +1197,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -1109,6 +1212,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 6935513905226304892, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 7621996457151650950, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_Name
       value: Counters
@@ -1122,6 +1233,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -1133,6 +1248,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 8118874948242103123, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: grabPoint
       value: 
@@ -1142,6 +1265,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6219072520932800288, guid: bf9811a815e18b641bcb43b6a2a5805c, type: 3}
     - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
+    - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: salmonSprite
       value: 
       objectReference: {fileID: -6967122372230043882, guid: 06402f0af5159844f9d95d7cd62f2d1e, type: 3}
@@ -1153,6 +1280,14 @@ PrefabInstance:
       propertyPath: cookedRiceSprite
       value: 
       objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
+    - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: salmonCutsSprite
+      value: 
+      objectReference: {fileID: -4075450997536083548, guid: 17c0ca4e1ab5b324d8da754ad8fc4831, type: 3}
+    - target: {fileID: 8308394330633769286, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: avocadoSlicesSprite
+      value: 
+      objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1505,6 +1640,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5026481184039049548, guid: 3a341491c744927409dcda40ce12a62e, type: 3}
+      propertyPath: grabPoint
+      value: 
+      objectReference: {fileID: 834798835}
+    - target: {fileID: 5026481184039049548, guid: 3a341491c744927409dcda40ce12a62e, type: 3}
+      propertyPath: plateSprite
+      value: 
+      objectReference: {fileID: -217780697308139103, guid: ebc9015af74c736449af70f9cf9024bd, type: 3}
     - target: {fileID: 5524767585285138074, guid: 3a341491c744927409dcda40ce12a62e, type: 3}
       propertyPath: m_Name
       value: PlateStation
@@ -1569,7 +1712,7 @@ PrefabInstance:
     - target: {fileID: 4414582373900072589, guid: 7c425a09f4cf3a54ebd920bf369689e4, type: 3}
       propertyPath: cookedRiceSprite
       value: 
-      objectReference: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+      objectReference: {fileID: 21893991649211789, guid: 0b65050033391dd4089866811a19cb91, type: 3}
     - target: {fileID: 8525151058753564989, guid: 7c425a09f4cf3a54ebd920bf369689e4, type: 3}
       propertyPath: m_Name
       value: PotStation

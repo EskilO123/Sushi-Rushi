@@ -5,6 +5,17 @@ public class CuttingStation : Station
     public ItemType itemOnBoard = ItemType.None;
     private int currentChops = 0;
     private int chopsRequired = 10;
+   
+    SpriteRenderer spriteRenderer;
+    
+    [SerializeField] GameObject grabPoint;
+    
+    [SerializeField] Sprite avocadoSlicesSprite;
+    [SerializeField] Sprite salmonCutsSprite;
+    private void Start()
+    {
+        spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+    }
 
     public override void Interact(PlayerController player)
     {
@@ -23,11 +34,23 @@ public class CuttingStation : Station
             
             Debug.Log("Cut: " + currentChops + "/" + chopsRequired);
 
-            if (currentChops >= chopsRequired)
+            if (currentChops >= chopsRequired && itemOnBoard == ItemType.Avocado) 
             {
                 ConvertToChopped();
                 Debug.Log("Done!");
-                
+                spriteRenderer.sprite = avocadoSlicesSprite;
+                player.currentItem = ItemType.AvocadoSlices;
+
+            }
+
+            else if(currentChops >= chopsRequired && itemOnBoard == ItemType.Salmon)
+            {
+                ConvertToChopped();
+                Debug.Log("Done!");
+                spriteRenderer.sprite = salmonCutsSprite;
+                player.currentItem = ItemType.SalmonCuts;
+                currentChops = 0;
+
             }
         }
         
@@ -35,6 +58,7 @@ public class CuttingStation : Station
         {
             player.currentItem = itemOnBoard;
             itemOnBoard = ItemType.None;
+            
         }
 
     }

@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ebc9015af74c736449af70f9cf9024bd
+guid: 8158f0992ba9ea841ac3ff034e8de25f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -217780697308139103
-    second: Plate 5_0
+      213: 5857187063055504921
+    second: Waiter cat_0
+  - first:
+      213: 5177556247043290106
+    second: Waiter cat_1
+  - first:
+      213: -7004473190914372653
+    second: Waiter cat_2
+  - first:
+      213: -3659882659279090502
+    second: Waiter cat_3
+  - first:
+      213: 4397290377101789666
+    second: Waiter cat_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 175
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plate 5_0
+      name: Waiter cat_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 194
-        height: 86
+        x: 273
+        y: 1022
+        width: 365
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a1f2021c994afcf0800000000000000
-      internalID: -217780697308139103
+      spriteID: 916df64e998e84150800000000000000
+      internalID: 5857187063055504921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter cat_1
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1031
+        width: 65
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3be9d89ff5ad740800000000000000
+      internalID: 5177556247043290106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter cat_2
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1028
+        width: 76
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db4dc08ebc1bce90800000000000000
+      internalID: -7004473190914372653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter cat_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1029
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcce0ebc1c753dc0800000000000000
+      internalID: -3659882659279090502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter cat_4
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 1036
+        width: 91
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e94565dc40560d30800000000000000
+      internalID: 4397290377101789666
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plate 5_0: -217780697308139103
+      Waiter cat_0: 5857187063055504921
+      Waiter cat_1: 5177556247043290106
+      Waiter cat_2: -7004473190914372653
+      Waiter cat_3: -3659882659279090502
+      Waiter cat_4: 4397290377101789666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
