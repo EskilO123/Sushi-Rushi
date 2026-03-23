@@ -28,7 +28,7 @@ public class CuttingStation : Station
             Debug.Log("Put " + itemOnBoard + " On Board.");
         }
         
-        else if (itemOnBoard != ItemType.None && !IsChopped(itemOnBoard) && player.currentItem == ItemType.None)
+        if (itemOnBoard != ItemType.None && !IsChopped(itemOnBoard) && player.currentItem == ItemType.None)
         {
             currentChops++;
             
@@ -40,6 +40,7 @@ public class CuttingStation : Station
                 Debug.Log("Done!");
                 spriteRenderer.sprite = avocadoSlicesSprite;
                 player.currentItem = ItemType.AvocadoSlices;
+                itemOnBoard = ItemType.None;
 
             }
 
@@ -49,9 +50,10 @@ public class CuttingStation : Station
                 Debug.Log("Done!");
                 spriteRenderer.sprite = salmonCutsSprite;
                 player.currentItem = ItemType.SalmonCuts;
-                currentChops = 0;
+                itemOnBoard = ItemType.None;
 
             }
+            
         }
         
         else if (itemOnBoard != ItemType.None && IsChopped(itemOnBoard) && player.currentItem == ItemType.None)
