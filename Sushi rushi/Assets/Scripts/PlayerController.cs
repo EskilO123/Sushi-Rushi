@@ -108,7 +108,11 @@ public class PlayerController : MonoBehaviour
     {
         if(rb.linearVelocityX > 0)
         {
-            transform.localScale = new Vector3(-1, 0, 0);
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (rb.linearVelocityY < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 }
