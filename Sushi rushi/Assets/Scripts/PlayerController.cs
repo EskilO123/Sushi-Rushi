@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         HandleMovement();
-        
+        Flip();
     }
 
     private void HandleMovement()
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        else if (rb.linearVelocityY < 0)
+        else if (rb.linearVelocityX < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
