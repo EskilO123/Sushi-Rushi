@@ -1,30 +1,28 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class TrashStation : MonoBehaviour
+public class TrashStation : Station
 {
-    PlayerController player;
-    public ItemType itemToGive;
+    [SerializeField] GameObject grabPoint;
 
     SpriteRenderer spriteRenderer;
-
-    [SerializeField] public GameObject grabPoint;
-
-    SourceStation sourceStation;
-
-
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
     }
 
-    public void Interact(PlayerController player)
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public override void Interact(PlayerController player)
     {
         if (player.currentItem != ItemType.None)
         {
-            player.currentItem = ItemType.None;
             spriteRenderer.sprite = null;
+            player.currentItem = ItemType.None;
         }
-      
     }
 }
