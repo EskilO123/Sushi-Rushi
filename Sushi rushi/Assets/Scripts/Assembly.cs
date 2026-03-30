@@ -30,16 +30,16 @@ public class WorkStation : Station
     void Combine(PlayerController player)
     {
         
-        if ((itemOnTable == ItemType.RicePlate && player.currentItem == ItemType.SalmonCuts) ||
-            (itemOnTable == ItemType.SalmonCuts && player.currentItem == ItemType.RicePlate))
+        if ((itemOnTable == ItemType.CookedRice && player.currentItem == ItemType.SalmonCuts) ||
+            (itemOnTable == ItemType.SalmonCuts && player.currentItem == ItemType.CookedRice))
         {
             itemOnTable = ItemType.SushiSalmon;
             player.currentItem = ItemType.None;
             Debug.Log("Made Sushi Salmon!");
         }
         
-        else if ((itemOnTable == ItemType.RicePlate && player.currentItem == ItemType.AvocadoSlices) ||
-                 (itemOnTable == ItemType.AvocadoSlices && player.currentItem == ItemType.RicePlate))
+        else if ((itemOnTable == ItemType.CookedRice && player.currentItem == ItemType.AvocadoSlices) ||
+                 (itemOnTable == ItemType.AvocadoSlices && player.currentItem == ItemType.CookedRice))
         {
             itemOnTable = ItemType.SushiAvocado;
             player.currentItem = ItemType.None;
