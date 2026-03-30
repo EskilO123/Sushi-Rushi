@@ -1548,6 +1548,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5854864543278605820, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+      propertyPath: m_Size.x
+      value: 0.68875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6887497
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.03756486
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00204432
+      objectReference: {fileID: 0}
     - target: {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
@@ -1906,6 +1926,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.83
       objectReference: {fileID: 0}
+    - target: {fileID: 5687304465432367309, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_Size.x
+      value: 2.6137586
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687304465432367309, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.24248654
+      objectReference: {fileID: 0}
     - target: {fileID: 6211023700583739685, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -2082,7 +2110,18 @@ PrefabInstance:
       propertyPath: avocadoSlicesSprite
       value: 
       objectReference: {fileID: -1257360172390301576, guid: 4d64d3ca219058045986668080a7e3ea, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 317652587909540502, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 5177850052604531285, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 2562045945510506689, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 1358808207863884835, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 8024912241611554674, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 3270579415776717783, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 9209258375239608669, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 4392659936205020192, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 4841784707320627641, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 6549546703982002732, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
+    - {fileID: 7836094070596498791, guid: 9d6aaeeab46b33245b82be5315083e4e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
