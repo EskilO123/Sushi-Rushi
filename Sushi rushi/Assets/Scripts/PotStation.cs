@@ -13,20 +13,20 @@ public class PotStation : Station
 
     public bool isCooking = false;
     public bool isReady = false;
-    public int portions = 0; 
+    public int portions = 0;
 
-    private float cookTime = 12f;
+    
 
-   void Start()
+    void Start()
     {
-        
+
         spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
     }
 
 
     public override void Interact(PlayerController player)
     {
-        
+
         if (player.currentItem == ItemType.Rice && !isCooking && !isReady && portions == 0)
         {
             player.currentItem = ItemType.Rice;
@@ -35,39 +35,39 @@ public class PotStation : Station
             player.currentItem = ItemType.None;
 
         }
-        
+
         else if (player.currentItem == ItemType.Plate && isReady && portions > 0)
         {
-            player.currentItem = ItemType.RicePlate; 
+            player.currentItem = ItemType.RicePlate;
             portions--;
 
             Debug.Log("Collected Rice. Portions left: " + portions);
 
-            
+
             if (portions <= 0)
             {
                 isReady = false;
             }
-            
+
         }
 
-        if(isReady)
+        if (isReady)
         {
             spriteRenderer.sprite = cookedRiceSprite;
             isReady = false;
             portions = 0;
             player.currentItem = ItemType.CookedRice;
-            
 
-            
+
+
         }
         else if (!isReady && portions == 0 && !isCooking && player.currentItem == ItemType.Rice)
         {
 
             StartCoroutine(CookRice());
 
-
         }
+
     }
 
     IEnumerator CookRice()
@@ -75,12 +75,24 @@ public class PotStation : Station
         isCooking = true;
         Debug.Log("Cooking Rice");
 
-            yield return new WaitForSeconds(cookTime);
+        for (int i = 0; i < 60; i++)
+        {
+            transform.Rotate(0, 0, 5f);
+            yield return new WaitForSeconds(0.1f);
+            transform.Rotate(0, 0, -10);
+            yield return new WaitForSeconds(0.1f);
+            transform.Rotate(0, 0, 5);
+
+        }
+
+
 
         isCooking = false;
         isReady = true;
         portions = 2;
         Debug.Log("Rice done");
-        
+
     }
+
+
 }

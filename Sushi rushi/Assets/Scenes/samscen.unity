@@ -204,11 +204,11 @@ Transform:
   m_GameObject: {fileID: 43221861}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0526, y: 0.232, z: 0}
-  m_LocalScale: {x: 0.4954811, y: 0.63144636, z: 1}
+  m_LocalPosition: {x: 0.016588211, y: 0.7423041, z: 0}
+  m_LocalScale: {x: 1.0191057, y: 1.5203427, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 375897071}
+  m_Father: {fileID: 982089149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &106868507
 GameObject:
@@ -1495,11 +1495,12 @@ Transform:
   m_GameObject: {fileID: 982089147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.044535093, y: -0.07630243, z: 0}
-  m_LocalScale: {x: 0.48619214, y: 0.41533163, z: 1}
+  m_LocalPosition: {x: -5.46, y: -4.1513, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.6999999, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 375897071}
+  m_Children:
+  - {fileID: 43221863}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1032321924 stripped
 Transform:
@@ -1952,7 +1953,7 @@ GameObject:
   - component: {fileID: 1424272260}
   - component: {fileID: 1424272259}
   m_Layer: 0
-  m_Name: Serverings lucka 4_0
+  m_Name: Serverings lucka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4289,12 +4290,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 208189404405419909, guid: 7c425a09f4cf3a54ebd920bf369689e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1136352084}
-    - targetCorrespondingSourceObject: {fileID: 208189404405419909, guid: 7c425a09f4cf3a54ebd920bf369689e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 982089149}
-    - targetCorrespondingSourceObject: {fileID: 208189404405419909, guid: 7c425a09f4cf3a54ebd920bf369689e4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 43221863}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c425a09f4cf3a54ebd920bf369689e4, type: 3}
 --- !u!1001 &8495723656630744439
@@ -4391,6 +4386,7 @@ SceneRoots:
   - {fileID: 586422766969734617}
   - {fileID: 5270688197202188811}
   - {fileID: 3152190489109904126}
+  - {fileID: 982089149}
   - {fileID: 7968458814779848575}
   - {fileID: 6524807276992534621}
   - {fileID: 4041635636715122863}
