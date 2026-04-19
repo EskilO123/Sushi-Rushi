@@ -700,7 +700,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2477759399272260961, guid: 2093fed597c6ca047ba3513d577c81d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -950,7 +950,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.27339983, y: -1.592696}
+  m_Offset: {x: -0.27339995, y: -2.6548815}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -960,7 +960,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.5470705, y: 0.6721134}
+  m_Size: {x: 5.5470705, y: 1.1871128}
   m_EdgeRadius: 0
 --- !u!4 &501028552
 Transform:
@@ -1450,7 +1450,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -855298285791758126, guid: 49255ef48e59a7c429f0e66f8af640bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1556,7 +1556,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5558554011940848873, guid: 2093fed597c6ca047ba3513d577c81d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1712,7 +1712,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.016804323}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1722,7 +1722,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.9663913}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &778058647
 SpriteRenderer:
@@ -2426,7 +2426,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.6833645}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2436,7 +2436,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.4668789}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1163852586
 SpriteRenderer:
@@ -2872,7 +2872,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6937817954938267909, guid: 4fdcdb187e16ae04fa99deb22095656c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3054,7 +3054,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 794683471701142204, guid: 8063b65cd0290a14ca969f473204911d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4393,11 +4393,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1525552779871159642, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.48
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 1525552779871159642, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.51
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1525552779871159642, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4434,10 +4434,6 @@ PrefabInstance:
     - target: {fileID: 4630533282066898654, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854864543278605820, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
-      propertyPath: m_SortingOrder
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6088931764379860794, guid: 8f7fd1790bc35f34f84ca738a9eee052, type: 3}
       propertyPath: m_Size.y
