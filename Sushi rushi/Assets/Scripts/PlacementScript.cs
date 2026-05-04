@@ -15,6 +15,8 @@ public class PlacementScript : Station
     [SerializeField] Sprite plateSprite;
     [SerializeField] Sprite avocadoSlicesSprite;
     [SerializeField] Sprite salmonCutsSprite;
+    [SerializeField] Sprite sushiAvocadoSprite;
+    [SerializeField] Sprite sushiSalmonSprite;
 
 
 
@@ -96,6 +98,28 @@ public class PlacementScript : Station
                 isPlaced = true;
             }
         }
+        else if (player.currentItem == ItemType.SushiAvocado)
+        {
+            if (!isPlaced)
+            {
+                Debug.Log("Placed down SushiAvocado");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = sushiAvocadoSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
+        else if (player.currentItem == ItemType.SushiSalmon)
+        {
+            if (!isPlaced)
+            {
+                Debug.Log("Placed down SalmonCuts");
+                player.currentItem = ItemType.None;
+                ppSpriteRenderer.sprite = sushiSalmonSprite;
+                gpSpriteRenderer.sprite = null;
+                isPlaced = true;
+            }
+        }
         else if (player.currentItem == ItemType.Plate)
         {
             if (!isPlaced)
@@ -166,7 +190,22 @@ public class PlacementScript : Station
                     ppSpriteRenderer.sprite = null;
                     isPlaced = false;
                 }
-
+                else if (ppSpriteRenderer.sprite == sushiAvocadoSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.SushiAvocado;
+                    gpSpriteRenderer.sprite = sushiAvocadoSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
+                else if (ppSpriteRenderer.sprite == sushiSalmonSprite)
+                {
+                    Debug.Log("Picked up from counter");
+                    player.currentItem = ItemType.SushiSalmon;
+                    gpSpriteRenderer.sprite = sushiSalmonSprite;
+                    ppSpriteRenderer.sprite = null;
+                    isPlaced = false;
+                }
                 else if (ppSpriteRenderer.sprite == plateSprite)
                 {
                     Debug.Log("Picked up from counter");
