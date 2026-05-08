@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using Unity.VisualScripting;
 
 public class PotStation : Station
 {
@@ -16,8 +15,7 @@ public class PotStation : Station
     public bool isReady = false;
     public int portions = 0;
 
-    [SerializeField] float potShakes = 60f;
-    // Potshakes * 0.2 = Cooking time
+    
 
     void Start()
     {
@@ -77,7 +75,7 @@ public class PotStation : Station
         isCooking = true;
         Debug.Log("Cooking Rice");
 
-        for (int i = 0; i < potShakes; i++)
+        for (int i = 0; i < 60; i++)
         {
             transform.Rotate(0, 0, 5f);
             yield return new WaitForSeconds(0.1f);

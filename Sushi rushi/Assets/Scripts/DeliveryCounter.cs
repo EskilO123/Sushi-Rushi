@@ -5,15 +5,8 @@ public class DeliveryCounter : Station
     [Header("Score Settings")]
     public int baseScore = 100;
     public int rushiModeBonus = 50;
+    
 
-    [SerializeField] GameObject grabPoint;
-
-    SpriteRenderer spriteRenderer;
-
-    private void Start()
-    {
-        spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
-    }
     public override void Interact(PlayerController player)
     {
         
@@ -52,7 +45,6 @@ public class DeliveryCounter : Station
 
            
             player.currentItem = ItemType.None;
-            spriteRenderer.sprite = null;
         }
        
     }
