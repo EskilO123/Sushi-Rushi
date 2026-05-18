@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public enum RecipeType { SalmonSushi, AvocadoSushi }
 
 [System.Serializable]
@@ -14,6 +14,10 @@ public class Order
 [System.Serializable]
 public class OrderManager : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI salmonSushiCount;
+    [SerializeField] TextMeshProUGUI avocadoSushiCount;
+    int salmonSushiOrderCounter;
+    int avocadoSushiOrderCounter;
     public static OrderManager Instance;
 
     public List<Order> activeOrders = new List<Order>();
@@ -66,8 +70,17 @@ public class OrderManager : MonoBehaviour
         newOrder.recipe = (Random.value > 0.5f) ? RecipeType.SalmonSushi : RecipeType.AvocadoSushi;
 
         activeOrders.Add(newOrder);
+        if (newOrder.recipe == RecipeType.SalmonSushi)
+        {
+            salmonSushiOrderCounter++;
+            salmonSushiCount.text = ("Salmon Sushi: " + salmonSushiOrderCounter);
+        }
+        if (newOrder.recipe == RecipeType.AvocadoSushi)
+        {
+            avocadoSushiOrderCounter++;
+            avocadoSushiCount.text = ("Avocado Sushi: " + avocadoSushiOrderCounter);
+        }
 
-        
         Debug.Log($"New Customer! Wants: {newOrder.recipe}");
     }
 
@@ -87,8 +100,17 @@ public class OrderManager : MonoBehaviour
                
                 Debug.Log("Order Complete!");
                 activeOrders.Remove(order);
+                if (deliveredItem == RecipeType.SalmonSushi)
+                {
+                    salmonSushiOrderCounter--;
+                    salmonSushiCount.text = ("Salmon Sushi: " + salmonSushiOrderCounter);
+                }
+                if (deliveredItem == RecipeType.AvocadoSushi)
+                {
+                    avocadoSushiOrderCounter--;
+                    avocadoSushiCount.text = ("Avocado Sushi: " + avocadoSushiOrderCounter);
+                }
 
-                
                 return true;
             }
         }

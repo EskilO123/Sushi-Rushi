@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [SerializeField] TextMeshProUGUI scoreText;
 
     [Header("Game Settings")]
     public float totalTime = 180f;
@@ -57,6 +60,7 @@ public class GameManager : MonoBehaviour
     {
         currentScore += amount;
         currentScore = Mathf.Max(0, currentScore);
+        scoreText.text = ("Score: " + currentScore.ToString());
         Debug.Log($"Score: {currentScore}");
     }
 
@@ -64,7 +68,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         isGameOver = true;
-        Time.timeScale = 0;
+        Application.Quit();
 
     }
 
