@@ -4,7 +4,9 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-
+    
+    float playerScale = 1.25f;
+    Animator anim;
     Transform grabPointFollow;
 
 
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public ItemType currentItem = ItemType.None;
 
     
-    private Vector2 moveInput;
+    private Vector2 moveVector;
     private Rigidbody2D rb;
     private Vector2 currentVelocity;
     private Vector2 lastInteractionDir = Vector2.down;
@@ -34,18 +36,19 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         grabPointFollow = grabPoint.GetComponent<Transform>();
+        anim = GetComponentInChildren<Animator>();
     }
 
    
 
     void OnMove(InputValue value)
     {
-        moveInput = value.Get<Vector2>();
+        moveVector = value.Get<Vector2>();
 
         
-        if (moveInput.sqrMagnitude > 0.01f)
+        if (moveVector.sqrMagnitude > 0.01f)
         {
-            lastInteractionDir = moveInput.normalized;
+            lastInteractionDir = moveVector.normalized;
         }
     }
 
@@ -62,11 +65,12 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
         Flip();
+        Catmations();
     }
 
     private void HandleMovement()
     {
-        Vector2 targetVelocity = moveInput * moveSpeed;
+        Vector2 targetVelocity = moveVector * moveSpeed;
 
        
         rb.linearVelocity = Vector2.SmoothDamp(rb.linearVelocity, targetVelocity, ref currentVelocity, movementSmoothing);
@@ -106,13 +110,24 @@ public class PlayerController : MonoBehaviour
 
     private void Flip()
     {
-        if(rb.linearVelocityX > 0)
+        if(moveVector.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
-        else if (rb.linearVelocityX < 0)
+        else if (moveVector.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.eulerAngles = new Vector3(0f, -180f, 0f);
+        }
+    }
+
+    void Catmations()
+    {
+        if(moveVector != Vector2.zero)
+        {
+            anim.SetBool("isRunning", true);
+        }   else
+        {
+            anim.SetBool("isRunning", false);
         }
     }
 }

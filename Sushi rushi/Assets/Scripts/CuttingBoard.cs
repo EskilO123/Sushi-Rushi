@@ -1,9 +1,13 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CuttingStation : Station
 {
+
+    
+    
     public ItemType itemOnBoard = ItemType.None;
-    private int currentChops = 0;
+    public int currentChops = 0;
     private int chopsRequired = 10;
    
     SpriteRenderer spriteRenderer;
@@ -12,13 +16,21 @@ public class CuttingStation : Station
     
     [SerializeField] Sprite avocadoSlicesSprite;
     [SerializeField] Sprite salmonCutsSprite;
+
+    bool catIsCutting;
     private void Start()
     {
         spriteRenderer = grabPoint.GetComponent<SpriteRenderer>();
+
     }
+    
+
 
     public override void Interact(PlayerController player)
     {
+        
+        
+        
         
         if (itemOnBoard == ItemType.None && IsChoppable(player.currentItem))
         {
@@ -33,6 +45,8 @@ public class CuttingStation : Station
             currentChops++;
             
             Debug.Log("Cut: " + currentChops + "/" + chopsRequired);
+
+            
 
             if (currentChops >= chopsRequired && itemOnBoard == ItemType.Avocado) 
             {
